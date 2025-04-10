@@ -5,7 +5,7 @@ export type IconType = {
 export interface InputProps {
   id: string;
   name: string;
-  placeholder: string;
+  placeholder?: string;
   type?: string;
   errorMessage?: string;
 }

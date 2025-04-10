@@ -48,7 +48,12 @@ export const labels = {
   contact: {
     title: 'Lets work together',
     description:
-      'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com'
+      'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
+    form: {
+      name: 'Name',
+      email: 'Email',
+      submit: 'Submit'
+    }
   },
   footer: {
     description: 'Copyright © Portfolio 2025. All rights reserved.'

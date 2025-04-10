@@ -4,7 +4,7 @@ export const Input = ({
   id,
   type = 'text',
   name,
-  placeholder,
+  placeholder = '',
   errorMessage = ''
 }: InputProps) => {
   return (

@@ -7,7 +7,7 @@ export const Contact = () => {
       <h3 className='lading-[1.875rem] text-center text-[2rem] font-semibold'>
         {labels.contact.title}
       </h3>
-      <p className='px-[4.25rem] text-[1.0625rem] font-normal'>
+      <p className='w-1/2 text-[1.0625rem] font-normal'>
         {labels.contact.description}
       </p>
       <ContactForm />

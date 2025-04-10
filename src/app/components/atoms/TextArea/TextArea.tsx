@@ -3,7 +3,7 @@ import { TextAreaProps } from '@/app/types';
 export const TextArea = ({
   id,
   name,
-  placeholder,
+  placeholder = '',
   rows = 6,
   cols = 50,
   errorMessage = ''
