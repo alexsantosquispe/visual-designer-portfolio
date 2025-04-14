@@ -11,17 +11,17 @@ import {
 
 export const Hero = () => {
   return (
-    <section className='flex w-full flex-col'>
-      <div className='flex w-full gap-[4.25rem] px-[60px] py-[2.625rem]'>
-        <div className='flex flex-col gap-12'>
-          <div className='flex flex-col justify-center gap-6'>
-            <h3 className='text-[1.25rem] leading-[1.875rem] font-semibold'>
+    <section id='about' className='flex w-full flex-col'>
+      <div className='flex flex-col-reverse p-4 md:w-full md:flex-row md:gap-8 md:px-[60px] md:py-[2.625rem] lg:gap-[4.25rem]'>
+        <div className='flex flex-col gap-6 md:gap-12'>
+          <div className='flex flex-col items-center justify-center gap-6 md:items-start'>
+            <h3 className='text-xl font-semibold md:leading-[1.875rem]'>
               {labels.hero.subTitle}
             </h3>
-            <h1 className='text-[4.25rem] leading-tight font-semibold'>
+            <h1 className='text-4xl font-semibold md:text-[4.25rem] md:leading-tight'>
               {labels.hero.title}
             </h1>
-            <p className='text-[1.0625rem] leading-[1.6875rem] font-normal'>
+            <p className='text-center text-lg font-normal md:text-left md:text-xl md:leading-[1.6875rem]'>
               {labels.hero.description}
             </p>
           </div>
@@ -33,10 +33,25 @@ export const Hero = () => {
             }}
           />
         </div>
-        <Image src='/image.png' width={480} height={360} alt='Header image' />
+
+        <Image
+          src='/image.png'
+          width={480}
+          height={360}
+          alt='Header image'
+          className='hidden lg:flex'
+        />
+
+        <Image
+          src='/image.png'
+          width={360}
+          height={240}
+          alt='Header image'
+          className='flex w-fit self-center lg:hidden'
+        />
       </div>
 
-      <div className='flex w-full items-center justify-between gap-[4.25rem] px-[4.25rem] py-[2.625rem]'>
+      <div className='hidden items-center justify-between px-[4.25rem] py-[2.625rem] md:flex md:w-full md:gap-8 lg:gap-[4.25rem]'>
         <GoogleIcon />
         <NikeIcon />
         <SamsungIcon />

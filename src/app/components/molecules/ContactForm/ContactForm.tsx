@@ -5,7 +5,7 @@ import { TextArea } from '../../atoms/TextArea/TextArea';
 
 export const ContactForm = () => {
   return (
-    <form className='flex w-1/2 flex-col gap-3'>
+    <form className='flex flex-col gap-3 md:w-1/2'>
       {/* Here goes the fields */}
       <Input id='name' name='name' placeholder={labels.contact.form.name} />
       <Input id='email' name='email' placeholder={labels.contact.form.email} />

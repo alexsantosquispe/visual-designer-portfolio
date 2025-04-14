@@ -21,8 +21,8 @@ const skillsMap = [
 
 export const Services = () => {
   return (
-    <section className='flex w-full px-6 py-[2.625rem]'>
-      <div className='flex w-full gap-6'>
+    <section className='flex w-full p-4 md:px-6 md:py-[2.625rem]'>
+      <div className='flex w-full flex-col gap-4 md:flex-row md:gap-6'>
         {skillsMap.map(({ title, description, src }, index) => (
           <div key={`${title}-${index}`}>
             <SkillCard

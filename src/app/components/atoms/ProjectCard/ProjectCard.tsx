@@ -8,8 +8,13 @@ export const ProjectCard = ({
   altImage
 }: CardProps) => {
   return (
-    <div className='flex flex-col gap-6'>
-      <Image src={srcImage} width={394} height={330} alt={altImage} />
+    <div className='flex flex-col justify-center gap-6'>
+      <div className='hidden md:flex'>
+        <Image src={srcImage} width={394} height={330} alt={altImage} />
+      </div>
+      <div className='flex md:hidden'>
+        <Image src={srcImage} width={310} height={200} alt={altImage} />
+      </div>
       <div className='flex flex-col gap-2'>
         <h5 className='text-[1.25rem] leading-[1.875rem] font-semibold'>
           {title}

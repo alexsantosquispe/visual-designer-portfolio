@@ -36,13 +36,16 @@ const projectsMap = [
 
 export const Projects = () => {
   return (
-    <section className='flex flex-col justify-center gap-[2.625rem] px-6 py-[2.625rem]'>
+    <section
+      id='projects'
+      className='flex flex-col justify-center gap-4 p-4 md:gap-[2.625rem] md:px-6 md:py-[2.625rem]'
+    >
       <h3 className='lading-[1.875rem] text-center text-[2rem] font-semibold'>
         {labels.projects.project.title}
       </h3>
-      <div className='grid grid-cols-3 gap-6'>
+      <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6'>
         {projectsMap.map(({ title, description, src }, index) => (
-          <div key={`${title}-${index}`}>
+          <div key={`${title}-${index}`} className='flex justify-center'>
             <ProjectCard
               title={title}
               description={description}
