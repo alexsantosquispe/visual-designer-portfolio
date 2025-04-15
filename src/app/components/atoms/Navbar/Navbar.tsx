@@ -3,6 +3,7 @@ import { MenuIcon, XIcon } from 'lucide-react';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 import cn from 'clsx';
+// import { LightDarkButton } from '../LightDarkButton/LightDarkButton';
 
 const linksMap = [
   { href: '#about', label: labels.navBar.about },
@@ -21,13 +22,17 @@ export const Navbar = () => {
     <header className='fixed flex w-full justify-center bg-white opacity-90 md:h-[4.875rem]'>
       <nav className='flex w-full flex-col md:w-[80rem] md:flex-row md:items-center md:justify-between md:px-[2.625rem] md:py-6'>
         <div className='flex w-full items-center justify-between p-4 md:p-0'>
-          <a className='text-2xl font-bold'>Logo</a>
+          <div className='flex items-center justify-center gap-x-4'>
+            <a className='text-3xl font-bold'>Logo</a>
+            {/* TODO: Implement dark mode toggle button */}
+            {/* <LightDarkButton /> */}
+          </div>
 
           <button className='cursor-pointer md:hidden' onClick={toggleNavbar}>
             {isNavbarOpen ? (
-              <XIcon color='black' size={36} />
+              <XIcon size={36} className='text-primary' />
             ) : (
-              <MenuIcon color='black' size={36} />
+              <MenuIcon size={36} className='text-primary' />
             )}
           </button>
         </div>

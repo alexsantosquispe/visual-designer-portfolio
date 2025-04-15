@@ -1,3 +1,5 @@
+import { Control, FieldValues } from 'react-hook-form';
+
 export type IconType = {
   color?: string;
 };
@@ -5,6 +7,7 @@ export type IconType = {
 export interface InputProps {
   id: string;
   name: string;
+  control: Control<FieldValues>;
   placeholder?: string;
   type?: string;
   errorMessage?: string;
@@ -16,6 +19,7 @@ export type TextAreaProps = Pick<
 > & {
   rows?: number;
   cols?: number;
+  control: Control<FieldValues>;
 };
 
 export interface CardProps {

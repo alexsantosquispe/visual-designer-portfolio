@@ -1,24 +1,46 @@
 import { InputProps } from '@/app/types';
+import { Controller } from 'react-hook-form';
+import { twMerge } from 'tailwind-merge';
+import cn from 'clsx';
 
 export const Input = ({
   id,
   type = 'text',
   name,
+  control,
   placeholder = '',
   errorMessage = ''
 }: InputProps) => {
   return (
-    <div className='flex flex-col gap-[0.125rem]'>
-      <input
-        id={id}
-        name={name}
-        type={type}
-        className='bg-secondary border-secondary focus:border-primary w-full border-2 px-6 py-4 focus:ring-0 focus:outline-none'
-        placeholder={placeholder}
-      />
-      {errorMessage && (
-        <span className='text-sm font-normal text-red-500'>{errorMessage}</span>
-      )}
-    </div>
+    <Controller
+      control={control}
+      name={name}
+      render={({ field: { onChange, value } }) => {
+        return (
+          <div className='flex flex-col gap-[0.125rem]'>
+            <input
+              id={id}
+              name={name}
+              type={type}
+              className={twMerge(
+                cn({
+                  'border-red-500': !!errorMessage,
+                  'border-secondary': !errorMessage
+                }),
+                'bg-secondary focus:border-primary w-full border-1 px-6 py-4 focus:ring-0 focus:outline-none'
+              )}
+              placeholder={placeholder}
+              onChange={onChange}
+              value={value}
+            />
+            {errorMessage && (
+              <span className='text-sm font-normal text-red-500'>
+                {errorMessage}
+              </span>
+            )}
+          </div>
+        );
+      }}
+    />
   );
 };

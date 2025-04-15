@@ -1,4 +1,7 @@
 import { TextAreaProps } from '@/app/types';
+import { Controller } from 'react-hook-form';
+import { twMerge } from 'tailwind-merge';
+import cn from 'clsx';
 
 export const TextArea = ({
   id,
@@ -6,21 +9,40 @@ export const TextArea = ({
   placeholder = '',
   rows = 6,
   cols = 50,
-  errorMessage = ''
+  errorMessage = '',
+  control
 }: TextAreaProps) => {
   return (
-    <div className='flex flex-col gap-[0.125rem]'>
-      <textarea
-        id={id}
-        name={name}
-        placeholder={placeholder}
-        rows={rows}
-        cols={cols}
-        className='bg-secondary border-secondary focus:border-primary w-full resize-none border-2 px-6 py-4 focus:ring-0 focus:outline-none'
-      ></textarea>
-      {errorMessage && (
-        <span className='text-sm font-normal text-red-500'>{errorMessage}</span>
-      )}
-    </div>
+    <Controller
+      name={name}
+      control={control}
+      render={({ field: { onChange, value } }) => {
+        return (
+          <div className='flex flex-col gap-[0.125rem]'>
+            <textarea
+              id={id}
+              name={name}
+              placeholder={placeholder}
+              rows={rows}
+              cols={cols}
+              className={twMerge(
+                cn({
+                  'border-red-500': !!errorMessage,
+                  'border-secondary focus:border-primary': !errorMessage
+                }),
+                'bg-secondary w-full resize-none border-1 px-6 py-4 focus:ring-0 focus:outline-none'
+              )}
+              onChange={onChange}
+              value={value}
+            ></textarea>
+            {errorMessage && (
+              <span className='text-sm font-normal text-red-500'>
+                {errorMessage}
+              </span>
+            )}
+          </div>
+        );
+      }}
+    />
   );
 };
