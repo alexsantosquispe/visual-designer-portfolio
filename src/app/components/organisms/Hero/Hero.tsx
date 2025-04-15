@@ -39,7 +39,7 @@ export const Hero = () => {
           width={480}
           height={360}
           alt='Header image'
-          className='hidden lg:flex'
+          className='hidden xl:flex'
         />
 
         <Image
@@ -47,7 +47,7 @@ export const Hero = () => {
           width={360}
           height={240}
           alt='Header image'
-          className='flex w-fit self-center lg:hidden'
+          className='flex w-fit self-center xl:hidden'
         />
       </div>
 

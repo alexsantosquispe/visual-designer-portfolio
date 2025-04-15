@@ -46,7 +46,7 @@ export const Testimonials = () => {
       <h3 className='lading-[1.875rem] text-center text-[2rem] font-semibold'>
         {labels.testimonials.title}
       </h3>
-      <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
+      <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6'>
         {testimonialMap.map(({ description, name, photo, company }, index) => (
           <div key={`${name}-${company}-${index}`}>
             <TestimonialCard

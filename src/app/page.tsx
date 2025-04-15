@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className='flex min-h-screen w-full flex-col items-center'>
       <Navbar />
-      <main className='mt-[4.25rem] flex w-full flex-col md:mt-[4.875rem] lg:w-[80rem]'>
+      <main className='mt-[4.25rem] flex w-full flex-col md:mt-[4.875rem] xl:w-[80rem]'>
         <Hero />
         <Services />
         <Projects />
