@@ -15,7 +15,7 @@ export const ProjectCard = ({
           width={394}
           height={330}
           alt={altImage}
-          className='rounded-2xl'
+          className='h-auto w-auto rounded-2xl'
         />
       </div>
       <div className='flex md:hidden'>
@@ -24,7 +24,7 @@ export const ProjectCard = ({
           width={310}
           height={200}
           alt={altImage}
-          className='rounded-2xl'
+          className='h-auto w-auto rounded-2xl'
         />
       </div>
       <div className='flex flex-col gap-2'>

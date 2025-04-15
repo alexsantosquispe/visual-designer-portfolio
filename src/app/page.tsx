@@ -1,12 +1,12 @@
 'use client';
 
+import { Footer } from './components/atoms/Footer/Footer';
 import { Navbar } from './components/atoms/Navbar/Navbar';
 import { Contact } from './components/organisms/Contact/Contact';
 import { Hero } from './components/organisms/Hero/Hero';
 import { Projects } from './components/organisms/Projects/Projects';
 import { Services } from './components/organisms/Services/Services';
 import { Testimonials } from './components/organisms/Testimonials/Testimonials';
-import { labels } from './constants';
 
 export default function Home() {
   return (
@@ -19,11 +19,7 @@ export default function Home() {
         <Testimonials />
         <Contact />
       </main>
-      <footer className='bg-primary flex w-full justify-center p-4'>
-        <span className='font-normal text-white'>
-          {labels.footer.description}
-        </span>
-      </footer>
+      <Footer />
     </div>
   );
 }

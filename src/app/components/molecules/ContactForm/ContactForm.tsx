@@ -27,7 +27,7 @@ export const ContactForm = () => {
 
   return (
     <form
-      className='flex flex-col gap-3 md:w-1/2'
+      className='flex flex-col gap-3 md:w-3/4 lg:w-1/2'
       onSubmit={handleSubmit(onSubmit)}
     >
       <Input

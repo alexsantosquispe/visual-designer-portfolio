@@ -21,7 +21,13 @@ export const TestimonialCard = ({
 
       <div className='flex gap-4'>
         <div className='h-[3.125] w-[3.125rem]'>
-          <Image src={photo} alt={name} width={50} height={50} />
+          <Image
+            src={photo}
+            alt={name}
+            width={50}
+            height={50}
+            className='h-auto w-auto'
+          />
         </div>
 
         <div className='flex flex-col'>

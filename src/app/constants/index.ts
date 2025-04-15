@@ -56,6 +56,9 @@ export const labels = {
     }
   },
   footer: {
-    description: 'Copyright © Portfolio 2025. All rights reserved.'
+    credits: 'Designed by ',
+    author: 'Anima',
+    creditsLink:
+      'https://www.figma.com/community/file/1095695980466714349/portfolio-template-edit-this-portfolio-and-export-it-as-html-get-your-portfolio-live-in-no-time'
   }
 };
