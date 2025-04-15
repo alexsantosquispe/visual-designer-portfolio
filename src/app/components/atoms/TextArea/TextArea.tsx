@@ -30,7 +30,7 @@ export const TextArea = ({
                   'border-red-500': !!errorMessage,
                   'border-secondary focus:border-primary': !errorMessage
                 }),
-                'bg-secondary w-full resize-none border-1 px-6 py-4 focus:ring-0 focus:outline-none'
+                'bg-secondary w-full resize-none rounded-xl border-1 px-6 py-4 focus:ring-0 focus:outline-none'
               )}
               onChange={onChange}
               value={value}

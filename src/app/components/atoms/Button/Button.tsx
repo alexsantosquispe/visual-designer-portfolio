@@ -24,7 +24,7 @@ export const Button = ({
           'bg-primary cursor-not-allowed opacity-75': disabled,
           'bg-primary cursor-pointer hover:bg-black': !disabled
         }),
-        'w-fit self-center px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto md:px-16 md:py-6'
+        'w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto'
       )}
       onClick={typeof onClick === 'function' ? onClick : undefined}
       disabled={disabled}

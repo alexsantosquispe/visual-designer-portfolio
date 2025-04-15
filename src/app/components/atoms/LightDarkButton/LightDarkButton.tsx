@@ -1,7 +1,7 @@
 import { SunIcon, MoonIcon } from 'lucide-react';
 import { useState } from 'react';
 
-export const LightDarkButton = () => {
+export const LightDarkButton = ({ size = 24 }: { size?: number }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const onClickHandler = () => {
@@ -11,9 +11,9 @@ export const LightDarkButton = () => {
   return (
     <button className='cursor-pointer self-center' onClick={onClickHandler}>
       {!isDarkMode && (
-        <MoonIcon size={26} className='text-primary md:hover:text-black' />
+        <MoonIcon size={size} className='text-primary md:hover:text-black' />
       )}
-      {isDarkMode && <SunIcon size={26} className='text-white' />}
+      {isDarkMode && <SunIcon size={size} className='text-white' />}
     </button>
   );
 };

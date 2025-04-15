@@ -10,10 +10,22 @@ export const ProjectCard = ({
   return (
     <div className='flex flex-col justify-center gap-6'>
       <div className='hidden md:flex'>
-        <Image src={srcImage} width={394} height={330} alt={altImage} />
+        <Image
+          src={srcImage}
+          width={394}
+          height={330}
+          alt={altImage}
+          className='rounded-2xl'
+        />
       </div>
       <div className='flex md:hidden'>
-        <Image src={srcImage} width={310} height={200} alt={altImage} />
+        <Image
+          src={srcImage}
+          width={310}
+          height={200}
+          alt={altImage}
+          className='rounded-2xl'
+        />
       </div>
       <div className='flex flex-col gap-2'>
         <h5 className='text-[1.25rem] leading-[1.875rem] font-semibold'>

@@ -14,7 +14,7 @@ export const TestimonialCard = ({
   company
 }: TestimonialCardProps) => {
   return (
-    <div className='bg-secondary flex w-fit flex-col gap-6 p-4 lg:gap-[4.25rem] lg:p-[2.625rem]'>
+    <div className='bg-secondary flex w-fit flex-col gap-6 rounded-xl p-4 lg:gap-[4.25rem] lg:p-[2.625rem]'>
       <p className='text-[1.25rem] leading-[1.875rem] font-normal'>
         {description}
       </p>
