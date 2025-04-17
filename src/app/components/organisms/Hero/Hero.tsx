@@ -11,7 +11,10 @@ import {
 
 export const Hero = () => {
   return (
-    <section id='about' className='flex w-full flex-col'>
+    <section
+      id='about'
+      className='flex w-full scroll-mt-[4.25rem] flex-col md:scroll-mt-[4.875rem]'
+    >
       <div className='flex flex-col-reverse gap-6 p-4 md:w-full md:flex-row md:gap-8 md:px-[60px] md:py-[2.625rem] lg:gap-[4.25rem]'>
         <div className='flex flex-col gap-6 md:gap-12'>
           <div className='flex flex-col items-center justify-center gap-6 md:items-start'>

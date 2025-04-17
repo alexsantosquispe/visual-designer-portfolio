@@ -27,7 +27,7 @@ export const TextArea = ({
               cols={cols}
               className={twMerge(
                 cn({
-                  'border-red-500': !!errorMessage,
+                  'border-rose-500': !!errorMessage,
                   'border-secondary focus:border-primary': !errorMessage
                 }),
                 'bg-secondary w-full resize-none rounded-xl border-1 px-6 py-4 focus:ring-0 focus:outline-none'
@@ -36,7 +36,7 @@ export const TextArea = ({
               value={value}
             ></textarea>
             {errorMessage && (
-              <span className='text-sm font-normal text-red-500'>
+              <span className='text-xs font-normal text-rose-500'>
                 {errorMessage}
               </span>
             )}

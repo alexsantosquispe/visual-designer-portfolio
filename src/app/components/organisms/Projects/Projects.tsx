@@ -38,7 +38,7 @@ export const Projects = () => {
   return (
     <section
       id='projects'
-      className='flex flex-col justify-center gap-4 p-4 md:gap-[2.625rem] md:px-6 md:py-[2.625rem]'
+      className='flex scroll-mt-[4.25rem] flex-col justify-center gap-4 p-4 md:scroll-mt-[4.875rem] md:gap-[2.625rem] md:px-6 md:py-[2.625rem]'
     >
       <h3 className='lading-[1.875rem] text-center text-[2rem] font-semibold'>
         {labels.projects.project.title}

@@ -24,7 +24,7 @@ export const Input = ({
               type={type}
               className={twMerge(
                 cn({
-                  'border-red-500': !!errorMessage,
+                  'border-rose-500': !!errorMessage,
                   'border-secondary': !errorMessage
                 }),
                 'bg-secondary focus:border-primary w-full rounded-lg border-1 px-6 py-4 focus:ring-0 focus:outline-none'
@@ -34,7 +34,7 @@ export const Input = ({
               value={value}
             />
             {errorMessage && (
-              <span className='text-sm font-normal text-red-500'>
+              <span className='text-xs font-normal text-rose-500'>
                 {errorMessage}
               </span>
             )}

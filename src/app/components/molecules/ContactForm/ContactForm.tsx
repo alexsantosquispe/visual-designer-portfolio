@@ -6,12 +6,15 @@ import { useForm } from 'react-hook-form';
 import { ContactFormData, ContactFormDataNames } from './ContactForm.types';
 import { ContactFormSchema } from './ContactForm.schema';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useSaveContactFormData } from '@/app/hooks/useSaveContactFormData';
 
 export const ContactForm = () => {
+  const { saveFormDataToGSDoc } = useSaveContactFormData();
   const {
     control,
     formState: { errors },
-    handleSubmit
+    handleSubmit,
+    reset
   } = useForm<ContactFormData>({
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
@@ -22,7 +25,8 @@ export const ContactForm = () => {
   });
 
   const onSubmit = (data: ContactFormData) => {
-    console.log('FORM DATA', data);
+    saveFormDataToGSDoc(data);
+    reset();
   };
 
   return (
