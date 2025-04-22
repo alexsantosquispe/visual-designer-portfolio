@@ -7,7 +7,7 @@ export const useSaveContactFormData = () => {
     try {
       const response = await fetch(scriptURL, {
         method: 'POST',
-        mode: 'no-cors',
+        mode: 'no-cors', //TODO: This is a temporary workaround, it'll be fixed in the next task
         headers: {
           'Content-Type': 'application/json'
         },
