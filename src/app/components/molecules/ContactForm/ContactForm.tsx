@@ -6,10 +6,8 @@ import { useForm } from 'react-hook-form';
 import { ContactFormData, ContactFormDataNames } from './ContactForm.types';
 import { ContactFormSchema } from './ContactForm.schema';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useSaveContactFormData } from '@/app/hooks/useSaveContactFormData';
 
 export const ContactForm = () => {
-  const { saveFormDataToGSDoc } = useSaveContactFormData();
   const {
     control,
     formState: { errors },
@@ -24,8 +22,9 @@ export const ContactForm = () => {
     }
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onSubmit = (data: ContactFormData) => {
-    saveFormDataToGSDoc(data);
+    //TODO: Send the data to the server.
     reset();
   };
 
