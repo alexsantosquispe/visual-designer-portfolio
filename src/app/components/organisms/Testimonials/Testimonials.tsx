@@ -43,9 +43,9 @@ const testimonialMap = [
 export const Testimonials = () => {
   return (
     <section className='py-[2.625rem} flex flex-col gap-4 p-4 md:gap-[2.625rem] md:px-6 md:py-[2.625rem]'>
-      <h3 className='lading-[1.875rem] text-center text-[2rem] font-semibold'>
+      <h2 className='lading-[1.875rem] text-center text-[2rem] font-semibold'>
         {labels.testimonials.title}
-      </h3>
+      </h2>
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6'>
         {testimonialMap.map(({ description, name, photo, company }, index) => (
           <div key={`${name}-${company}-${index}`}>

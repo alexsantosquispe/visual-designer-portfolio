@@ -22,6 +22,7 @@ export const TextArea = ({
             <textarea
               id={id}
               name={name}
+              aria-label={name}
               placeholder={placeholder}
               rows={rows}
               cols={cols}

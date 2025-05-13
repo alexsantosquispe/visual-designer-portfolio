@@ -56,8 +56,8 @@ export const labels = {
     }
   },
   footer: {
-    credits: 'Designed by ',
-    author: 'Anima',
+    credits: 'Inspired by ',
+    author: 'Anima design',
     creditsLink:
       'https://www.figma.com/community/file/1095695980466714349/portfolio-template-edit-this-portfolio-and-export-it-as-html-get-your-portfolio-live-in-no-time'
   }

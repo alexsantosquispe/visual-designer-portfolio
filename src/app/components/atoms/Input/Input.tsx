@@ -21,6 +21,7 @@ export const Input = ({
             <input
               id={id}
               name={name}
+              aria-label={name}
               type={type}
               className={twMerge(
                 cn({

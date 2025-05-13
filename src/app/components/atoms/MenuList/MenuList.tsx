@@ -25,14 +25,15 @@ export const MenuList = ({
       )}
     >
       {options.map((item, index) => (
-        <a
-          key={`${item.label}-${index}`}
-          href={item.href}
-          onClick={onSelectOption}
-          className='w-full px-4 py-2 md:opacity-90 md:hover:text-black md:hover:opacity-100'
-        >
-          <li>{item.label}</li>
-        </a>
+        <li key={`${item.label}-${index}`}>
+          <a
+            href={item.href}
+            onClick={onSelectOption}
+            className='text-primary/70 md:hover:text-primary w-full px-4 py-2 font-medium'
+          >
+            {item.label}
+          </a>
+        </li>
       ))}
     </ul>
   );
