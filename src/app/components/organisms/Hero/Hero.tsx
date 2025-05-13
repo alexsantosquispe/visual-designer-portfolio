@@ -1,6 +1,5 @@
 import { labels } from '@/app/constants';
 import Image from 'next/image';
-import { Button } from '../../atoms/Button/Button';
 import {
   AdidasIcon,
   AppleIcon,
@@ -29,12 +28,12 @@ export const Hero = () => {
             </p>
           </div>
 
-          <Button
-            title={labels.hero.contactButton}
-            onClick={() => {
-              console.log('Go to the footer form');
-            }}
-          />
+          <a
+            href='#contact'
+            className='bg-primary hover:bg-primary/90 w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-start'
+          >
+            Contact
+          </a>
         </div>
 
         <Image

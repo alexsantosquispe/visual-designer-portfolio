@@ -18,11 +18,12 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
+      aria-label={title}
       type={type}
       className={twMerge(
         cn({
-          'bg-primary cursor-not-allowed opacity-75': disabled,
-          'bg-primary cursor-pointer hover:bg-black': !disabled
+          'bg-primary/80 cursor-not-allowed': disabled,
+          'bg-primary hover:bg-primary/70 cursor-pointer': !disabled
         }),
         'w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto'
       )}

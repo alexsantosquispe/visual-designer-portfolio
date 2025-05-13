@@ -40,9 +40,9 @@ export const Projects = () => {
       id='projects'
       className='flex scroll-mt-[4.25rem] flex-col justify-center gap-4 p-4 md:scroll-mt-[4.875rem] md:gap-[2.625rem] md:px-6 md:py-[2.625rem]'
     >
-      <h3 className='lading-[1.875rem] text-center text-[2rem] font-semibold'>
+      <h2 className='lading-[1.875rem] text-center text-[2rem] font-semibold'>
         {labels.projects.project.title}
-      </h3>
+      </h2>
       <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6'>
         {projectsMap.map(({ title, description, src }, index) => (
           <div key={`${title}-${index}`} className='flex justify-center'>

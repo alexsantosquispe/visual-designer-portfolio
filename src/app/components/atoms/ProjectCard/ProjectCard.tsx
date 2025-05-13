@@ -28,9 +28,9 @@ export const ProjectCard = ({
         />
       </div>
       <div className='flex flex-col gap-2'>
-        <h5 className='text-[1.25rem] leading-[1.875rem] font-semibold'>
+        <h3 className='text-[1.25rem] leading-[1.875rem] font-semibold'>
           {title}
-        </h5>
+        </h3>
         <p className='text-[1.0625rem] leading-[1.0625rem] font-normal'>
           {description}
         </p>
