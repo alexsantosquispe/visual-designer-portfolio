@@ -6,7 +6,8 @@ exports[`Button component Styles should render default button correctly 1`] = `
   "baseElement": <body>
     <div>
       <button
-        class="bg-primary cursor-pointer hover:bg-black w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto"
+        aria-label="button title"
+        class="bg-primary hover:bg-primary/70 cursor-pointer w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto"
         type="button"
       >
         button title
@@ -15,7 +16,8 @@ exports[`Button component Styles should render default button correctly 1`] = `
   </body>,
   "container": <div>
     <button
-      class="bg-primary cursor-pointer hover:bg-black w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto"
+      aria-label="button title"
+      class="bg-primary hover:bg-primary/70 cursor-pointer w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto"
       type="button"
     >
       button title
@@ -81,7 +83,8 @@ exports[`Button component Styles should render default button correctly 2`] = `
   "baseElement": <body>
     <div>
       <button
-        class="bg-primary cursor-pointer hover:bg-black w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto"
+        aria-label="button title"
+        class="bg-primary hover:bg-primary/70 cursor-pointer w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto"
         type="button"
       >
         button title
@@ -89,7 +92,8 @@ exports[`Button component Styles should render default button correctly 2`] = `
     </div>
     <div>
       <button
-        class="bg-primary cursor-pointer hover:bg-black w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto"
+        aria-label="button title"
+        class="bg-primary hover:bg-primary/70 cursor-pointer w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto"
         type="submit"
       >
         button title
@@ -98,7 +102,8 @@ exports[`Button component Styles should render default button correctly 2`] = `
   </body>,
   "container": <div>
     <button
-      class="bg-primary cursor-pointer hover:bg-black w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto"
+      aria-label="button title"
+      class="bg-primary hover:bg-primary/70 cursor-pointer w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto"
       type="submit"
     >
       button title
