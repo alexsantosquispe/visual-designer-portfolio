@@ -20,8 +20,8 @@ export const MenuList = ({
   return (
     <ul
       className={twMerge(
-        'flex flex-col items-center justify-center gap-2 overflow-hidden px-4 font-medium transition-all duration-300 md:flex md:flex-row md:space-x-2 md:overflow-auto md:font-medium',
-        cn({ 'h-0 md:h-auto': !isNavbarOpen, 'h-[136px]': isNavbarOpen })
+        'flex flex-col gap-2 overflow-hidden px-4 font-medium transition-all duration-300 md:flex-row md:gap-8 md:overflow-auto md:p-0 md:font-medium',
+        cn({ 'h-0 md:h-auto': !isNavbarOpen, 'h-auto': isNavbarOpen })
       )}
     >
       {options.map((item, index) => (
@@ -29,7 +29,7 @@ export const MenuList = ({
           <a
             href={item.href}
             onClick={onSelectOption}
-            className='text-primary/70 md:hover:text-primary w-full px-4 py-2 font-medium'
+            className='text-primary md:text-primary/70 md:hover:text-primary flex w-full py-2 font-medium md:px-2'
           >
             {item.label}
           </a>
