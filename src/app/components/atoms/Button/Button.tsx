@@ -23,7 +23,7 @@ export const Button = ({
       className={twMerge(
         cn({
           'bg-primary/80 cursor-not-allowed': disabled,
-          'bg-primary hover:bg-primary/70 cursor-pointer': !disabled
+          'bg-primary/90 hover:bg-primary/70 cursor-pointer': !disabled
         }),
         'w-fit self-center rounded-xl px-8 py-4 text-[1.25rem] font-semibold text-white md:self-auto'
       )}
