@@ -1,4 +1,4 @@
-[![Say Hello](https://github.com/alexsantosquispe/visual-designer-portfolio/actions/workflows/hello.yml/badge.svg)](https://github.com/alexsantosquispe/visual-designer-portfolio/actions/workflows/hello.yml)
+[![Deployment Pipeline](https://github.com/alexsantosquispe/visual-designer-portfolio/actions/workflows/pipeline.yml/badge.svg)](https://github.com/alexsantosquispe/visual-designer-portfolio/actions/workflows/pipeline.yml)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
