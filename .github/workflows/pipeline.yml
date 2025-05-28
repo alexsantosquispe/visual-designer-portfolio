@@ -18,7 +18,7 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: npm ci
+        run: npm ci --no-audit --no-fund --no-optional
 
       - name: Linter
         run: npm run lint
