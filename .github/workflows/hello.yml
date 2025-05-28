@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo the message
-        run: echo "Hola github actions!"
+        run: echo "Hello github actions!"
